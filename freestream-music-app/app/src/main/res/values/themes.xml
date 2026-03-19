@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme for FreeStream -->
+    <style name="Theme.FreeStream" parent="android:Theme.Material.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="android:colorPrimary">@color/spotify_green</item>
+        <item name="android:colorPrimaryDark">@color/spotify_green_dark</item>
+        <item name="android:colorAccent">@color/spotify_green_light</item>
+        
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+    
+    <!-- Splash screen theme -->
+    <style name="Theme.FreeStream.Splash" parent="Theme.SplashScreen">
+        <!-- Window background -->
+        <item name="windowSplashScreenBackground">@color/background_dark</item>
+        
+        <!-- Animated icon (optional) -->
+        <!-- <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item> -->
+        <!-- <item name="windowSplashScreenAnimationDuration">300</item> -->
+        
+        <!-- Icon background -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/background_dark</item>
+        
+        <!-- Post splash screen theme -->
+        <item name="postSplashScreenTheme">@style/Theme.FreeStream</item>
+    </style>
+</resources>

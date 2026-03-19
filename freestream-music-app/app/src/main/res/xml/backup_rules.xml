@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup Rules for Android Auto Backup
+    
+    Defines what data is included/excluded from cloud backup.
+    User data like playlists and favorites are backed up.
+    Cached data is excluded.
+-->
+<full-backup-content>
+    <!-- Include preferences -->
+    <include domain="sharedpref" path="."/>
+    
+    <!-- Include database -->
+    <include domain="database" path="."/>
+    
+    <!-- Exclude cache directories -->
+    <exclude domain="cache" path="."/>
+    <exclude domain="external" path="cache/"/>
+    
+    <!-- Exclude specific cache files -->
+    <exclude domain="cache" path="image_cache/"/>
+    <exclude domain="cache" path="http-cache/"/>
+    <exclude domain="cache" path="exoplayer/"/>
+</full-backup-content>

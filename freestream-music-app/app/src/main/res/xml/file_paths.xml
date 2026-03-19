@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    File Provider Paths for FreeStream
+    
+    Defines which directories can be accessed via FileProvider
+    for sharing files with other apps.
+-->
+<paths>
+    <!-- App's internal cache directory -->
+    <cache-path 
+        name="cache" 
+        path="." />
+    
+    <!-- App's internal files directory -->
+    <files-path 
+        name="files" 
+        path="." />
+    
+    <!-- External cache directory -->
+    <external-cache-path 
+        name="external_cache" 
+        path="." />
+    
+    <!-- External files directory -->
+    <external-files-path 
+        name="external_files" 
+        path="." />
+    
+    <!-- External storage (for downloads if implemented) -->
+    <external-path 
+        name="external" 
+        path="." />
+    
+    <!-- Music directory -->
+    <external-path 
+        name="music" 
+        path="Music/" />
+    
+    <!-- Downloads directory -->
+    <external-path 
+        name="downloads" 
+        path="Download/" />
+</paths>

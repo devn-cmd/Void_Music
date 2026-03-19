@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Data Extraction Rules for Android 12+ (API 31)
+    
+    Defines what data can be backed up to Google Cloud.
+    Only user preferences and playlists are backed up, not cached audio.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include preferences -->
+        <include domain="sharedpref" path="."/>
+        
+        <!-- Include database (playlists, favorites, history) -->
+        <include domain="database" path="."/>
+        
+        <!-- Exclude cache -->
+        <exclude domain="cache" path="."/>
+        
+        <!-- Exclude image cache -->
+        <exclude domain="cache" path="image_cache/"/>
+        
+        <!-- Exclude HTTP cache -->
+        <exclude domain="cache" path="http-cache/"/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Same rules for device-to-device transfer -->
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="."/>
+        <exclude domain="cache" path="."/>
+        <exclude domain="cache" path="image_cache/"/>
+        <exclude domain="cache" path="http-cache/"/>
+    </device-transfer>
+</data-extraction-rules>
